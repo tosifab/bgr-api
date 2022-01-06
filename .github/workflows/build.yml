@@ -44,6 +44,8 @@ jobs:
 
       - name: Build Image
         id: build-image
-            run: |
-              docker build -t IMAGE213 .
-              echo "::set-output name=image::IMAGE213"
+        env:
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $IMAGE_TAG .
+          echo "::set-output name=image::$IMAGE_TAG"
