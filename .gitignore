@@ -1,0 +1,29 @@
+**/.DS_Store
+*.log
+*.terraform
+
+.gradletasknamecache
+.gradle/
+
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# node stuffs
+.eslintcache
+node_modules/
+
+# dependencies
+
+# testing
+coverage/
+
+# production
+build/
+lib/
+
+# misc
+.DS_Store
+.env
+.envrc
