@@ -45,5 +45,5 @@ jobs:
       - name: Build Image
         id: build-image
         run: |
-          docker build -t IMAGE213 .
-          echo "::set-output name=image::IMAGE213"
+          docker build -t image123 .
+          echo "::set-output name=image::image123"
